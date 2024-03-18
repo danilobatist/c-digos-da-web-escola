@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <title>web escola:matematica</title>
+<style>
+    body{
+        background-image: linear-gradient(to bottom, #9ea4a7, #4e5052);
+    }
+</style>
+    <link rel="stylesheet" href="">
+
+</head>
+<body>
+
+    <a rel="next" target="_self" href="02.html"><img src="imagens/tipos de numeros.png02.png" alt="uma caspsula com o nome tipos de numeros escrito dentro"></a>
+    <a rel="next" target="_self" href="03.html"><img src="imagens/operações-com-numeros-decimais01.png" alt="uma capsula com onome operações com numeros decimais escrita nela."></a>
+    <a href="04.html"><img src="imagens/porcentagem.png" alt=""></a>
+    <a href="05.html"><img rel="next" target="_self" src="imagens/equação-primeiro-grau.png" alt="uma capsula dentro dela escrito equação primeiro grau"> </a>
+    <a href="06.html"><img rel="next" target="_self"     src="imagens/finansas.png" alt="uma capsula com onome finanças escrito dentro"></a>
+    <main>
+        <menu>
+            <h1>aprenda mais sobre matematica</h1>
+        </menu>
+        <p>Benvindo a web escola:matematica, aqui você podera aprender diversos assuntos de matematica</p>
+        <a href="testes.html">o</a>
+        <p>você pode aprender:</p>
+        <li type="I">tipos de numeros</li>
+        <li type="I">operações com numeros decimais</li>
+        <li type="I">equação primeiro grau</li>
+        <li type="I">porcentagem</li>
+        <li type="I">finansas</li>
+        
+        
+        <input type="text" id="userInput" value="" />
+        <script>
+            var userName = prompt('Digite seu nom:');
+        
+            while (!userName) {
+                alert('Ops... Você esqueceu de digitar seu nome.');
+                userName = prompt('Digite seu nome:');
+            }
+            alert('Bem-vindo, ' + userName + '!');
+        
+            
+        </script>
+        
+        <script>
+            document.getElementById('userInput').addEventListener('change', function() {
+                let userInput = document.getElementById('userInput').value;
+                
+                if (userInput === 'e') {
+                    let link = document.createElement('a');
+                    link.href = 'index.html';
+                    link.textContent = 'Ir para index.html';
+                    document.body.appendChild(link);
+                }
+            });
+        
+            console.log('Olá mundo.');
+
+            document.getElementById('userInput').addEventListener('change', function() {
+                let userInput = document.getElementById('userInput').value;
+                
+                if (userInput === 'h') {
+                    let link = document.createElement('b');
+                    link.href = '02.html';
+                    link.textContent = 'Ir para index.html';
+                    document.body.appendChild(link);
+                }
+            });
+        </script>
+
+        <h2  style="background-color: rgb(47, 0, 255);"> agradecimento especial</h2>
+        <p>Gustavo Guanabara: professor de programação</p>
+        <p>Esse é seu canal no youtube<a rel="external" target="_blank" href="https://www.youtube.com/@CursoemVideo">Curso em video</a></p>
+        <p>quer aprender a fazer um site tambem assista Curso em video</p>
+    </main>
+</body>
+</html>
